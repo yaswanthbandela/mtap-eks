@@ -9,12 +9,10 @@ metadata:
 vpc:
   id: "vpc-0382bcc1a39154f0a"  
   subnets:
-    private:
-      us-east-1a: { cidr: "172.31.1.0/24" }
-      us-east-1b: { cidr: "172.31.2.0/24" }
     public:
-      us-east-1a: { cidr: "172.31.3.0/24" }
-      us-east-1b: { cidr: "172.31.4.0/24" }
+      us-east-1a: { id: "subnet-02bec7f8f65198dca" }
+      us-east-1b: { id: "subnet-0b5903c1c2240d8af" }
+
 
 nodeGroups:
   - name: mtap-drupal
