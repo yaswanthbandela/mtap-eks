@@ -20,4 +20,11 @@ spec:
         image: 484907490966.dkr.ecr.us-east-1.amazonaws.com/drupal:latest
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: "200m"         # Minimum CPU requested
+            memory: "512Mi"      # Minimum Memory requested
+          limits:
+            cpu: "500m"         # Maximum CPU allowed
+            memory: "1Gi"
         
