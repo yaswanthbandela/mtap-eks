@@ -31,11 +31,11 @@ cloudWatch:
   clusterLogging:
     enableTypes: ["api", "audit", "authenticator"]
 
-iam:
-  withOIDC: true
-  serviceAccounts:
-    - metadata:
-        name: aws-load-balancer-controller
-        namespace: kube-system
-      attachPolicyARNs:
-        - arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy
+# iam:
+#   withOIDC: true
+#   serviceAccounts:
+#     - metadata:
+#         name: aws-load-balancer-controller
+#         namespace: kube-system
+#       attachPolicyARNs:
+#         - arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy
