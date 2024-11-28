@@ -27,7 +27,7 @@ nodeGroups:
       Environment: dev
     ssh:
       allow: true
-    privateNetworking: true   # Use private subnets for nodes
+
 
 cloudWatch:
   clusterLogging:
