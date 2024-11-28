@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mtap-dev-deployment
+  namespace: development
+  labels:
+    app: mtap-dev
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mtap-dev
+  template:
+    metadata:
+      labels:
+        app: mtap-dev
+    spec:
+      containers:
+      - name: mtap-dev-container
+        image: 484907490966.dkr.ecr.us-east-1.amazonaws.com/drupal:latest
+        ports:
+        - containerPort: 80
+        
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1"

@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: mtap-cluster
+  name: mtap-cluster-1
   region: us-east-1  
   version: "1.27"   
 
@@ -15,7 +15,7 @@ vpc:
 
 
 nodeGroups:
-  - name: mtap-drupal
+  - name: mtap-drupal-1
     instanceType: t3.medium   # Choose an instance type
     desiredCapacity: 2
     minSize: 2
