@@ -7,7 +7,7 @@ metadata:
   version: "1.27"   
 
 vpc:
-  cidr: "172.31.0.0/16"  # Default CIDR; adjust if needed
+  id: "vpc-0382bcc1a39154f0a"  
   subnets:
     private:
       us-east-1a: { cidr: "172.31.1.0/24" }
