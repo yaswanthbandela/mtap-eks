@@ -10,11 +10,11 @@ vpc:
   cidr: "172.31.0.0/16"  # Default CIDR; adjust if needed
   subnets:
     private:
-      us-east-1a: { cidr: "192.168.1.0/24" }
-      us-east-1b: { cidr: "192.168.2.0/24" }
+      us-east-1a: { cidr: "172.31.1.0/24" }
+      us-east-1b: { cidr: "172.31.2.0/24" }
     public:
-      us-east-1a: { cidr: "192.168.3.0/24" }
-      us-east-1b: { cidr: "192.168.4.0/24" }
+      us-east-1a: { cidr: "172.31.3.0/24" }
+      us-east-1b: { cidr: "172.31.4.0/24" }
 
 nodeGroups:
   - name: mtap-drupal
